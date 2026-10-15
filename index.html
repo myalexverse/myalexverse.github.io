@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abel Alejandro Tovar | Software Engineer • Native Mobile (iOS/Android), E2EE Systems & Shopify Architect</title>
-  <meta name="description" content="Portafolio de Ingeniería de Software de Abel Alejandro Tovar — Arquitecto Mobile Nativo (Swift 6 / SwiftUI & Kotlin 2.2 / Jetpack Compose), Criptografía E2EE (HPKE RFC 9180), WebRTC, Full-Stack & Shopify OS 2.0." />
+  <title>Abel Alejandro Tovar | Senior AI & Software Systems Engineer • Agent Governance, Evaluation & Native Mobile (iOS/Android)</title>
+  <meta name="description" content="Portfolio of Abel Alejandro Tovar — Senior AI & Software Systems Engineer specializing in AI Agent Runtime Governance, Statistical Evaluation, Go-Live Gates, Native Mobile (iOS Swift 6 & Android Kotlin 2.2), E2EE Cryptography & Full-Stack Platforms." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,6 +55,10 @@
       box-shadow: 0 20px 40px -15px rgba(255, 107, 44, 0.12), 0 0 25px -5px rgba(59, 130, 246, 0.08);
       transform: translateY(-2px);
     }
+    .bento-card-emerald:hover {
+      border-color: rgba(16, 185, 129, 0.45);
+      box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.16);
+    }
     .bento-card-blue:hover {
       border-color: rgba(59, 130, 246, 0.4);
       box-shadow: 0 20px 40px -15px rgba(59, 130, 246, 0.15);
@@ -67,11 +71,6 @@
       overflow: hidden;
       position: relative;
     }
-    .tab-btn.active {
-      background: linear-gradient(135deg, rgba(255, 107, 44, 0.18), rgba(255, 159, 67, 0.08));
-      border-color: rgba(255, 107, 44, 0.55);
-      color: #FFFFFF;
-    }
     .screen-pill.active {
       background-color: #FF6B2C;
       color: #FFFFFF;
@@ -83,6 +82,9 @@
       color: #FFFFFF;
       border-color: #3B82F6;
     }
+    input[type="range"] {
+      accent-color: #10B981;
+    }
   </style>
 </head>
 <body class="min-h-screen antialiased selection:bg-orange-500 selection:text-white">
@@ -90,16 +92,16 @@
   <!-- Ambient Background Glows -->
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
     <div class="absolute -top-40 -left-40 w-96 h-96 bg-orange-600/15 rounded-full blur-[130px]"></div>
-    <div class="absolute top-1/3 -right-40 w-[28rem] h-[28rem] bg-blue-600/12 rounded-full blur-[140px]"></div>
-    <div class="absolute bottom-0 left-1/3 w-96 h-96 bg-emerald-600/10 rounded-full blur-[130px]"></div>
+    <div class="absolute top-1/4 -right-40 w-[30rem] h-[30rem] bg-emerald-600/12 rounded-full blur-[140px]"></div>
+    <div class="absolute bottom-0 left-1/3 w-96 h-96 bg-blue-600/10 rounded-full blur-[130px]"></div>
     <div class="absolute inset-0 bg-grid-pattern opacity-70"></div>
   </div>
 
   <!-- Sticky Navigation Header -->
-  <header class="border-b border-slate-800/80 bg-[#06080F]/80 backdrop-blur-xl sticky top-0 z-50">
+  <header class="border-b border-slate-800/80 bg-[#06080F]/85 backdrop-blur-xl sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
       <a href="#" class="flex items-center space-x-3.5 group">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 via-amber-500 to-blue-600 p-[1px] shadow-lg shadow-orange-500/20">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 via-orange-500 to-blue-600 p-[1px] shadow-lg shadow-orange-500/20">
           <div class="w-full h-full bg-[#090D18] rounded-[11px] flex items-center justify-center font-extrabold text-sm text-white tracking-wider group-hover:bg-transparent transition">
             AT
           </div>
@@ -107,21 +109,23 @@
         <div>
           <div class="flex items-center gap-2">
             <h1 class="text-base sm:text-lg font-extrabold text-white tracking-tight">Abel Alejandro Tovar</h1>
-            <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-orange-500/10 text-orange-400 border border-orange-500/20">
-              Scend Labs
+            <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              Senior AI & Systems Engineer
             </span>
           </div>
-          <p class="text-xs text-slate-400 font-medium">Software Engineer • Native Mobile (iOS/Android), E2EE & Shopify Architect</p>
+          <p class="text-xs text-slate-400 font-medium">Agent Governance & Evaluation • Native Mobile (iOS/Android) • Full-Stack Architect</p>
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-6 text-xs font-semibold text-slate-300">
+      <nav class="hidden xl:flex items-center gap-6 text-xs font-semibold text-slate-300">
+        <a href="#ai-governance" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span> AI Agent Governance & Eval
+        </a>
         <a href="#myaow-spotlight" class="hover:text-orange-400 transition flex items-center gap-1.5">
           <span class="w-2 h-2 rounded-full bg-orange-500"></span> Myaow (iOS & Android)
         </a>
-        <a href="#myaow-architecture" class="hover:text-orange-400 transition">Criptografía & Funciones</a>
-        <a href="#production-projects" class="hover:text-blue-400 transition">Proyectos en Producción</a>
-        <a href="#engineering-stack" class="hover:text-emerald-400 transition">Stack & Arquitectura</a>
+        <a href="#production-projects" class="hover:text-blue-400 transition">Production Systems (8)</a>
+        <a href="#engineering-stack" class="hover:text-emerald-400 transition">Architecture & Stack</a>
       </nav>
 
       <div class="flex items-center gap-2.5">
@@ -140,39 +144,41 @@
 
   <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <!-- HERO BENTO SECTION -->
-    <section class="pt-10 sm:pt-14 pb-10">
+    <!-- ===================================================================== -->
+    <!-- HERO BENTO SECTION                                                    -->
+    <!-- ===================================================================== -->
+    <section class="pt-10 sm:pt-14 pb-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
 
         <!-- Hero Main Card (7 cols) -->
         <div class="lg:col-span-7 bento-card rounded-3xl p-7 sm:p-9 flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute -right-20 -top-20 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute -right-20 -top-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
           <div>
             <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-semibold mb-6">
               <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
               <span class="w-2 h-2 rounded-full bg-emerald-400 -ml-3"></span>
-              Disponible 100% Remoto • Full-Time / Contract (LATAM & Internacional)
+              Available 100% Remote • Senior AI Engineer / Mobile & Systems Architect
             </div>
 
-            <h2 class="text-3xl sm:text-4xl lg:text-[2.65rem] font-extrabold text-white tracking-tight leading-[1.15]">
-              Arquitectura móvil nativa <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-300 to-orange-500">iOS & Android</span>, sistemas cifrados E2EE y plataformas <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Full-Stack & Shopify</span>.
+            <h2 class="text-3xl sm:text-4xl lg:text-[2.55rem] font-extrabold text-white tracking-tight leading-[1.15]">
+              Sistemas de <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-300">Gobernanza y Evaluación de Agentes IA</span>, arquitectura nativa <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-300 to-orange-500">iOS & Android</span> y plataformas críticas.
             </h2>
 
             <p class="text-slate-300 text-sm sm:text-base mt-5 leading-relaxed">
-              Ingeniero de software especializado en construir productos completos de extremo a extremo: desde protocolos criptográficos interoperables (<span class="text-white font-mono text-xs bg-slate-800/90 px-1.5 py-0.5 rounded">HPKE RFC 9180</span>, <span class="text-white font-mono text-xs bg-slate-800/90 px-1.5 py-0.5 rounded">Swift 6 / CryptoKit</span>, <span class="text-white font-mono text-xs bg-slate-800/90 px-1.5 py-0.5 rounded">Kotlin 2.2 / Keystore</span>), audio/video en tiempo real (<span class="text-white font-mono text-xs bg-slate-800/90 px-1.5 py-0.5 rounded">WebRTC / CallKit</span>) y backends <span class="text-white font-mono text-xs bg-slate-800/90 px-1.5 py-0.5 rounded">Supabase Edge + PostgreSQL</span>, hasta ecosistemas corporativos en <span class="text-white font-mono text-xs bg-slate-800/90 px-1.5 py-0.5 rounded">Shopify OS 2.0</span>.
+              Ingeniero de software senior construyendo sistemas confiables, auditables e independientes del proveedor donde agentes multi-paso y aplicaciones nativas ejecutan acciones reales. Experiencia práctica en <strong class="text-white">Runtime Governance & Safety Controls</strong> (aprobaciones, validación determinista, kill switches), <strong class="text-white">Estadística Aplicada</strong> (muestreo de revisión Cochran, intervalos de confianza Wilson 95%, detección de regresión), criptografía <strong class="text-white">HPKE RFC 9180 E2EE</strong> (<code class="text-orange-300 text-xs">Swift 6 / Kotlin 2.2</code>) y ecosistemas <strong class="text-white">TypeScript / Python / PostgreSQL</strong>.
             </p>
           </div>
 
           <div class="mt-8 pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-3">
-            <a href="#myaow-spotlight" class="px-5 py-3 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold text-xs sm:text-sm shadow-lg shadow-orange-500/25 transition flex items-center gap-2">
-              <i class="fas fa-paw"></i> Explorar Ecosistema Myaow
+            <a href="#ai-governance" class="px-4 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-lg shadow-emerald-600/25 transition flex items-center gap-2">
+              <i class="fas fa-shield-check"></i> AI Governance & Eval Lab
             </a>
-            <a href="https://github.com/myalexverse/Myaow-iOS" target="_blank" rel="noopener" class="px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 hover:text-white border border-slate-700 font-semibold text-xs sm:text-sm transition flex items-center gap-2">
-              <i class="fab fa-apple text-base"></i> Myaow iOS Repo
+            <a href="#myaow-spotlight" class="px-4 py-3 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold text-xs sm:text-sm shadow-lg shadow-orange-500/25 transition flex items-center gap-2">
+              <i class="fas fa-paw"></i> Ecosistema Myaow (iOS & Android)
             </a>
-            <a href="https://github.com/myalexverse/Myaow-Android" target="_blank" rel="noopener" class="px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 hover:text-white border border-slate-700 font-semibold text-xs sm:text-sm transition flex items-center gap-2">
-              <i class="fab fa-android text-emerald-400 text-base"></i> Myaow Android Repo
+            <a href="https://github.com/myalexverse/agent-governance-runtime" target="_blank" rel="noopener" class="px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 hover:text-white border border-slate-700 font-semibold text-xs sm:text-sm transition flex items-center gap-2">
+              <i class="fab fa-github"></i> Agent Runtime Repo
             </a>
           </div>
         </div>
@@ -185,39 +191,39 @@
                 <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
                 <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
                 <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
-                <span class="text-xs text-slate-400 ml-2">engineering-telemetry.zsh</span>
+                <span class="text-xs text-slate-400 ml-2">governance-and-verification.zsh</span>
               </div>
-              <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[11px] border border-emerald-500/20">VERIFIED</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[11px] border border-emerald-500/20">ALL GATES PASS</span>
             </div>
 
             <div class="space-y-3 text-xs">
               <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/90">
                 <div class="flex items-center justify-between text-slate-400 mb-1">
-                  <span>$ protocol --verify ios-android</span>
-                  <span class="text-emerald-400 font-bold">PASS ✓</span>
+                  <span>$ agent-gate --eval-release v3.1</span>
+                  <span class="text-emerald-400 font-bold">GO-LIVE ✓</span>
                 </div>
                 <p class="text-slate-200 font-sans text-xs">
-                  Interoperabilidad binaria <strong class="text-orange-400">HPKE RFC 9180 Auth v2</strong> (<code class="text-amber-300">X25519 + ChaCha20-Poly1305</code>) entre Swift CryptoKit y Kotlin Bouncy Castle.
+                  <strong class="text-emerald-400">Runtime Governance & Statistical Gates:</strong> Muestreo Cochran, cota superior de error Wilson 95%, Z-test de regresión, aprobaciones HITL/campaña, procedencia de datos y kill-switch automático.
                 </p>
               </div>
 
               <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/90">
                 <div class="flex items-center justify-between text-slate-400 mb-1">
-                  <span>$ audio-radio --checks</span>
+                  <span>$ myaow --validate-critical</span>
                   <span class="text-orange-400 font-bold">14,449 CHECKS</span>
                 </div>
                 <p class="text-slate-200 font-sans text-xs">
-                  Consola <strong class="text-white">Radio PTT Híbrida</strong> (WebRTC + P2P Offline) y sintetizador matemático <strong class="text-orange-300">Pulso Myaow</strong> (7 señales WAV a 1320/1810 Hz).
+                  <strong class="text-orange-400">Executable Validation (Myaow iOS & Android):</strong> Cifrado interoperable <code class="text-amber-300">HPKE RFC 9180 v2</code>, Radio PTT (7 señales WAV sintetizadas), flujos de aprobación y moderación IA local.
                 </p>
               </div>
 
               <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/90">
                 <div class="flex items-center justify-between text-slate-400 mb-1">
-                  <span>$ media-engine --wallpapers</span>
-                  <span class="text-blue-400 font-bold">23 LOOPS H.264</span>
+                  <span>$ safety-pipeline --vision-ai</span>
+                  <span class="text-blue-400 font-bold">FAIL-CLOSED</span>
                 </div>
                 <p class="text-slate-200 font-sans text-xs">
-                  Motor procedural <strong class="text-white">Ambiente Vivo</strong> con doble <code class="text-blue-300">AVQueuePlayer</code> sin reinicio de fotograma, 5 filtros faciales en vivo y 31 expresiones.
+                  <strong class="text-blue-400">Observabilidad & Diseño Pre-Implementación:</strong> Especificaciones formales (<code class="text-blue-300">ADR-0001</code>, <code class="text-blue-300">MATRIZ-PARIDAD</code>) convertidas en validación ejecutable.
                 </p>
               </div>
             </div>
@@ -225,16 +231,16 @@
 
           <div class="grid grid-cols-3 gap-2.5 mt-5 pt-4 border-t border-slate-800/80 text-center font-sans">
             <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
-              <div class="text-lg sm:text-xl font-extrabold text-orange-400">2</div>
-              <div class="text-[11px] text-slate-400">Clientes Nativos (iOS & Android)</div>
+              <div class="text-lg sm:text-xl font-extrabold text-emerald-400">95% CI</div>
+              <div class="text-[11px] text-slate-400">Wilson Bounds & Sample Gates</div>
             </div>
             <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
-              <div class="text-lg sm:text-xl font-extrabold text-blue-400">7</div>
-              <div class="text-[11px] text-slate-400">Repositorios & Apps en Vivo</div>
+              <div class="text-lg sm:text-xl font-extrabold text-orange-400">iOS + Android</div>
+              <div class="text-[11px] text-slate-400">Clientes Nativos Interoperables</div>
             </div>
             <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
-              <div class="text-lg sm:text-xl font-extrabold text-emerald-400">90%+</div>
-              <div class="text-[11px] text-slate-400">Optimización Cloud & Web</div>
+              <div class="text-lg sm:text-xl font-extrabold text-blue-400">100%</div>
+              <div class="text-[11px] text-slate-400">Provider-Independent Audit</div>
             </div>
           </div>
         </div>
@@ -243,7 +249,158 @@
     </section>
 
     <!-- ===================================================================== -->
-    <!-- FLAGSHIP SPOTLIGHT: MYAOW (iOS & ANDROID)                             -->
+    <!-- SECTION 1: AI AGENT EVALUATION, GOVERNANCE & APPLIED STATISTICS LAB   -->
+    <!-- ===================================================================== -->
+    <section id="ai-governance" class="py-8">
+      <div class="bento-card bento-card-emerald rounded-[2rem] p-6 sm:p-10 border border-emerald-500/30 relative overflow-hidden">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <!-- Section Header -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8 border-b border-slate-800/90">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">
+              <i class="fas fa-scale-balanced"></i> AI Safety, Evaluation & Runtime Governance Engineering
+            </div>
+            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+              🛡️ Governed Multi-Step AI Agent Runtime & Statistical Go-Live Gates
+            </h3>
+            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-4xl leading-relaxed">
+              Framework de producción en <strong class="text-white">TypeScript/Node.js</strong> y <strong class="text-white">Python</strong> para plataformas donde agentes LLM multi-paso ejecutan acciones reales (<code class="text-emerald-300">send_message</code>, <code class="text-emerald-300">update_record</code>, <code class="text-emerald-300">prepare_decision</code>). Garantiza <strong class="text-emerald-300">propiedad responsable por acción</strong>, <strong class="text-emerald-300">aprobaciones individuales y por campaña con tamaño de muestra estadístico</strong>, <strong class="text-emerald-300">validaciones deterministas previas a acciones irreversibles</strong>, <strong class="text-emerald-300">abstracción de proveedor con bitácora inmutable de procedencia (Data Provenance)</strong> y <strong class="text-emerald-300">suspensión automática (Kill Switch)</strong> cuando la calidad cae bajo el umbral acordado.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap sm:flex-nowrap gap-3 shrink-0">
+            <a href="https://github.com/myalexverse/agent-governance-runtime" target="_blank" rel="noopener" class="px-4 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-bold transition flex items-center gap-2 shadow-lg shadow-emerald-600/25">
+              <i class="fab fa-github text-base"></i> Ver Repositorio (TS & Python)
+              <i class="fas fa-arrow-up-right-from-square text-xs opacity-80"></i>
+            </a>
+            <a href="https://github.com/myalexverse/agent-governance-runtime/blob/main/docs/ADR-0001-governed-agent-runtime.md" target="_blank" rel="noopener" class="px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 text-xs sm:text-sm font-semibold transition flex items-center gap-2">
+              <i class="fas fa-file-code text-emerald-400"></i> Leer ADR-0001
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Simulator + 4 Governance Pillars -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-8 items-start">
+
+          <!-- Left: Interactive Statistical Sample Sizing & Go-Live Gate Simulator (6 cols) -->
+          <div class="lg:col-span-6 p-6 rounded-2xl bg-slate-950/90 border border-slate-800/90 space-y-5">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+              <div>
+                <span class="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+                  <i class="fas fa-sliders mr-1"></i> Simulador Estadístico en Vivo (Campaign & Go-Live Gate)
+                </span>
+                <p class="text-xs text-slate-400 mt-0.5">
+                  Calcula en tiempo real el tamaño de muestra Cochran ($n$), la cota superior de error Wilson al 95% ($U_{95\%}$) y el estado del Kill Switch.
+                </p>
+              </div>
+              <span id="sim-status-badge" class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shrink-0">
+                GO-LIVE APPROVED ✓
+              </span>
+            </div>
+
+            <!-- Sliders -->
+            <div class="space-y-4 text-xs">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <label class="text-slate-300 font-semibold">Volumen de Campaña / Lote de Acciones ($N$):</label>
+                  <span id="val-pop" class="font-mono text-white font-bold">2,500 acciones</span>
+                </div>
+                <input id="inp-pop" type="range" min="100" max="10000" step="100" value="2500" oninput="updateGovSim()" class="w-full" />
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <label class="text-slate-300 font-semibold">Muestra Revisada Antes de Liberar ($n$):</label>
+                  <span id="val-sample" class="font-mono text-emerald-400 font-bold">180 revisadas</span>
+                </div>
+                <input id="inp-sample" type="range" min="20" max="400" step="5" value="180" oninput="updateGovSim()" class="w-full" />
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <label class="text-slate-300 font-semibold">Errores Observados en la Muestra ($k$):</label>
+                  <span id="val-errors" class="font-mono text-amber-300 font-bold">2 errores</span>
+                </div>
+                <input id="inp-errors" type="range" min="0" max="30" step="1" value="2" oninput="updateGovSim()" class="w-full" />
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <label class="text-slate-300 font-semibold">Umbral Máximo Permitido (Cota Superior Error 95%):</label>
+                  <span id="val-thresh" class="font-mono text-cyan-300 font-bold">5.0%</span>
+                </div>
+                <input id="inp-thresh" type="range" min="2" max="15" step="0.5" value="5.0" oninput="updateGovSim()" class="w-full" />
+              </div>
+            </div>
+
+            <!-- Live Computed Statistical Readout -->
+            <div class="grid grid-cols-3 gap-3 pt-2 font-mono">
+              <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-center">
+                <div class="text-[11px] text-slate-400">Muestra Mín. Cochran</div>
+                <div id="out-req-sample" class="text-base sm:text-lg font-extrabold text-white mt-0.5">110</div>
+                <div id="out-sample-ok" class="text-[10px] text-emerald-400">Muestra suficiente</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-center">
+                <div class="text-[11px] text-slate-400">Error Puntual ($\hat{p}$)</div>
+                <div id="out-point-err" class="text-base sm:text-lg font-extrabold text-slate-200 mt-0.5">1.11%</div>
+                <div class="text-[10px] text-slate-500">k / n observado</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-center">
+                <div class="text-[11px] text-slate-400">Wilson 95% Upper Bound</div>
+                <div id="out-wilson-upper" class="text-base sm:text-lg font-extrabold text-emerald-400 mt-0.5">3.95%</div>
+                <div id="out-bound-ok" class="text-[10px] text-emerald-400">Dentro de política</div>
+              </div>
+            </div>
+
+            <div id="sim-explanation" class="p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/30 text-xs text-slate-200 font-mono">
+              [GATE PASS] La muestra revisada (180 >= 110 requeridas) garantiza con 95% de confianza que la tasa de error real no supera 3.95% (umbral máx: 5.0%). Acción autorizada para release.
+            </div>
+          </div>
+
+          <!-- Right: 4 Architectural Pillars for the Role (6 cols) -->
+          <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+            <div class="p-5 rounded-2xl bg-slate-950/85 border border-slate-800/90">
+              <div class="text-emerald-400 text-base font-mono font-bold mb-1.5">01. Runtime Safeguards & Approvals</div>
+              <h4 class="text-sm font-bold text-white mb-2">Propiedad Responsable, Aprobaciones HITL y Validaciones Deterministas</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Cada capacidad (<code class="text-emerald-300">send_message</code>, <code class="text-emerald-300">update_record</code>, <code class="text-emerald-300">prepare_decision</code>) exige un propietario explícito, guardias deterministas en código (filtros PII/SSN, esquemas e invariantes) y aprobación humana o muestreo estadístico de campaña antes de ejecutar acciones irreversibles.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-slate-950/85 border border-slate-800/90">
+              <div class="text-cyan-400 text-base font-mono font-bold mb-1.5">02. Evaluation & Regression Gates</div>
+              <h4 class="text-sm font-bold text-white mb-2">Re-evaluación ante Cambios de Modelo o Instrucción</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Compuertas de lanzamiento (<code class="text-cyan-300">runCapabilityGoLiveGate</code>) que evalúan datasets dorados tras cada cambio de prompt o modelo, aplicando pruebas Z de dos proporciones para bloquear degradaciones de calidad antes de llegar a producción.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-slate-950/85 border border-slate-800/90">
+              <div class="text-amber-400 text-base font-mono font-bold mb-1.5">03. Observability & Provenance</div>
+              <h4 class="text-sm font-bold text-white mb-2">Registro Inmutable de Llamadas e Independencia de Proveedor</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                <code class="text-amber-300">ModelProviderRegistry</code> desacopla la plataforma de cualquier proveedor único (OpenAI, Anthropic, Gemini, Local) y registra cada invocación con <code class="text-slate-200">model</code>, <code class="text-slate-200">instructionVersion</code>, hash SHA-256, <code class="text-slate-200">dataProvenance</code> y checks de calidad.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-slate-950/85 border border-slate-800/90">
+              <div class="text-rose-400 text-base font-mono font-bold mb-1.5">04. Kill Switches & Executable Specs</div>
+              <h4 class="text-sm font-bold text-white mb-2">Suspensión Automática por Calidad y Especificaciones Ejecutables</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Si la cota superior de error móvil supera el umbral acordado en producción, el runtime suspende automáticamente la capacidad (<strong class="text-white">Kill Switch</strong>). Todas las reglas de gobernanza y ADRs se traducen en suites de validación ejecutables.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 2: FLAGSHIP SPOTLIGHT — MYAOW (iOS & ANDROID)                 -->
     <!-- ===================================================================== -->
     <section id="myaow-spotlight" class="py-10">
       <div class="bento-card rounded-[2rem] p-6 sm:p-10 border border-orange-500/25 relative overflow-hidden">
@@ -253,24 +410,24 @@
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8 border-b border-slate-800/90">
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-400 text-xs font-bold uppercase tracking-wider mb-3">
-              <i class="fas fa-star"></i> Proyecto Insignia • Arquitectura Multiplataforma Nativa
+              <i class="fas fa-star"></i> Ecosistema Nativo Multiplataforma • Validación Ejecutable (14,449+ Checks)
             </div>
             <h3 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight flex flex-wrap items-center gap-3">
-              <span>🐾 Myaow</span>
-              <span class="text-base sm:text-xl font-semibold text-slate-400">— Privacidad Cercana, Expresión Viva y Colaboración Cifrada</span>
+              <span>🐾 Myaow (iOS & Android)</span>
+              <span class="text-base sm:text-xl font-semibold text-slate-400">— Criptografía HPKE v2, Radio PTT, IA Local & Proyectos Gobernados</span>
             </h3>
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-4xl leading-relaxed">
-              Ecosistema de comunicación privada sin número telefónico construido desde cero con <strong class="text-white">Swift 6 / SwiftUI (iOS)</strong> y <strong class="text-white">Kotlin 2.2 / Jetpack Compose (Android)</strong>. Combina cifrado autenticado <strong class="text-orange-300">HPKE RFC 9180 v2</strong>, consola <strong class="text-orange-300">Radio Push-to-Talk híbrida</strong> (Internet WebRTC + Cercanía P2P Offline), <strong class="text-orange-300">videollamadas con 5 filtros faciales locales y Portal a Dúo</strong>, <strong class="text-orange-300">23 fondos cinematográficos procedurales</strong> y <strong class="text-orange-300">espacios de proyectos colaborativos</strong> con propuestas votables.
+              Plataforma de comunicación privada y colaboración en equipo construida con <strong class="text-white">Swift 6 / SwiftUI (iOS)</strong> y <strong class="text-white">Kotlin 2.2 / Jetpack Compose (Android)</strong>. Demuestra en producción cómo convertir matrices de aceptación escritas (<code class="text-orange-300">MATRIZ-PARIDAD.md</code>) y notas de diseño (<code class="text-orange-300">ADR-0001</code>) en <strong class="text-orange-300">compuertas deterministas de validación</strong>: interoperabilidad binaria <strong class="text-orange-300">HPKE RFC 9180 v2</strong>, flujos de aprobación de propuestas a tareas en <code class="text-orange-300">ProjectWorkspace</code>, <strong class="text-orange-300">moderación de contenido con IA local fail-closed</strong>, consola <strong class="text-orange-300">Radio Push-to-Talk híbrida</strong>, <strong class="text-orange-300">5 filtros faciales en vivo</strong> y <strong class="text-orange-300">23 fondos cinematográficos procedurales</strong>.
             </p>
           </div>
 
           <div class="flex flex-wrap sm:flex-nowrap gap-3 shrink-0">
             <a href="https://github.com/myalexverse/Myaow-iOS" target="_blank" rel="noopener" class="px-4 py-3 rounded-xl bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm font-bold transition flex items-center gap-2 shadow-lg shadow-orange-500/25">
-              <i class="fab fa-apple text-base"></i> Ver Código iOS
+              <i class="fab fa-apple text-base"></i> Ver Myaow-iOS
               <i class="fas fa-arrow-up-right-from-square text-xs opacity-80"></i>
             </a>
             <a href="https://github.com/myalexverse/Myaow-Android" target="_blank" rel="noopener" class="px-4 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-bold transition flex items-center gap-2 shadow-lg shadow-emerald-600/25">
-              <i class="fab fa-android text-base"></i> Ver Código Android
+              <i class="fab fa-android text-base"></i> Ver Myaow-Android
               <i class="fas fa-arrow-up-right-from-square text-xs opacity-80"></i>
             </a>
           </div>
@@ -370,7 +527,7 @@
         <div id="myaow-architecture" class="mt-12 pt-10 border-t border-slate-800/90">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
             <h4 class="text-lg sm:text-xl font-extrabold text-white flex items-center gap-2.5">
-              <i class="fas fa-microchip text-orange-400"></i> Ingeniería Detrás de Myaow: Qué Construimos y Cómo Funciona
+              <i class="fas fa-microchip text-orange-400"></i> Arquitectura e Ingeniería de Myaow (iOS & Android)
             </h4>
             <span class="text-xs font-mono text-slate-400">Swift 6 • Kotlin 2.2 • Supabase Edge • PostgreSQL RLS</span>
           </div>
@@ -396,9 +553,9 @@
               </div>
               <h5 class="text-base font-bold text-white mb-2">2. Android Keystore AES-GCM & Vinculación Multidispositivo</h5>
               <p class="text-xs text-slate-300 leading-relaxed mb-3">
-                En Android (<code class="text-emerald-300">:app, :protocol, :account, :linking-prototype</code>), la identidad X25519 se cifra con <code class="text-slate-200">AES-256-GCM</code> bajo llave no exportable del <strong class="text-white">Android Keystore</strong>. Incluye prototipo <code class="text-slate-200">DeviceLinkPrototype</code> (<strong class="text-white">Ed25519 + HPKE</strong>) para cuentas simultáneas iPhone + Android.
+                En Android (<code class="text-emerald-300">:app, :protocol, :account, :linking-prototype</code>), la identidad X25519 se cifra con <code class="text-slate-200">AES-256-GCM</code> bajo llave no exportable del <strong class="text-white">Android Keystore</strong>. Incluye prototipo <code class="text-slate-200">DeviceLinkPrototype</code> (<strong class="text-white">Ed25519 + HPKE</strong>) con confirmación explícita de digest.
               </p>
-              <div class="text-[11px] font-mono text-emerald-400">✓ 23 tests de cuenta + Gateway JS en vivo</div>
+              <div class="text-[11px] font-mono text-emerald-400">✓ 23 tests de cuenta + ADR-0001 documentado</div>
             </div>
 
             <!-- Pillar 3 -->
@@ -430,9 +587,9 @@
               <div class="w-10 h-10 rounded-xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-3.5">
                 <i class="fas fa-diagram-project text-lg"></i>
               </div>
-              <h5 class="text-base font-bold text-white mb-2">5. Proyectos Colaborativos, Propuestas Votables y Misiones</h5>
+              <h5 class="text-base font-bold text-white mb-2">5. Gobernanza de Proyectos, Propuestas Votables y Misiones</h5>
               <p class="text-xs text-slate-300 leading-relaxed mb-3">
-                Espacios grupales con pestañas de <strong class="text-white">Chat, Tareas y Archivos</strong>. Incluye objetivo compartido, calendario con zona horaria, salud calculada vs. estado manual, propuestas (<em class="text-slate-200">«Por decidir» / «En el plan»</em>) con votos retirables y conversión directa a tarea con evidencias.
+                Espacios grupales con pestañas de <strong class="text-white">Chat, Tareas y Archivos</strong>. Flujo gobernado de decisiones: miembros proponen y votan (<em class="text-slate-200">«Por decidir» / «En el plan»</em>), administradores aprueban y convierten propuestas o mensajes en tareas con evidencias.
               </p>
               <div class="text-[11px] font-mono text-blue-400">✓ Validado con PostgreSQL / PGlite transaccional</div>
             </div>
@@ -442,9 +599,9 @@
               <div class="w-10 h-10 rounded-xl bg-rose-500/15 border border-rose-500/30 flex items-center justify-center text-rose-400 mb-3.5">
                 <i class="fas fa-fingerprint text-lg"></i>
               </div>
-              <h5 class="text-base font-bold text-white mb-2">6. Ambiente Vivo (23 Videos), Bóveda Face ID e IA Local</h5>
+              <h5 class="text-base font-bold text-white mb-2">6. Ambiente Vivo (23 Videos), Bóveda Face ID & Moderación IA</h5>
               <p class="text-xs text-slate-300 leading-relaxed mb-3">
-                23 fondos de video generados proceduralmente con <code class="text-rose-300">AVFoundation</code> y transición continua entre pantallas; <strong class="text-white">31 expresiones felinas</strong>, <strong class="text-white">14 maullidos</strong>, creador de stickers sin fondo, <strong class="text-white">Bóveda Biométrica</strong>, mensajes programados cifrados y moderación IA en dispositivo.
+                23 fondos de video generados proceduralmente con <code class="text-rose-300">AVFoundation</code> y transición continua entre pantallas; <strong class="text-white">31 expresiones felinas</strong>, <strong class="text-white">14 maullidos</strong>, creador de stickers sin fondo, <strong class="text-white">Bóveda Biométrica</strong> y moderación IA local fail-closed.
               </p>
               <div class="text-[11px] font-mono text-rose-400">✓ 10 iconos alternativos + Pausas térmicas/batería</div>
             </div>
@@ -465,14 +622,17 @@
             Portafolio de Productos & Código Abierto
           </div>
           <h3 class="text-2xl sm:text-3xl font-extrabold text-white flex items-center gap-3">
-            <i class="fas fa-cubes text-blue-500"></i> Ecosistemas y Proyectos en Producción
+            <i class="fas fa-cubes text-blue-500"></i> Sistemas, Agentes y Proyectos en Producción
           </h3>
         </div>
 
         <!-- Category Filter Buttons -->
         <div class="flex flex-wrap gap-2">
           <button onclick="filterProjects('all', this)" class="filter-btn active px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-900 text-xs font-semibold text-slate-300 transition">
-            Todos (7)
+            Todos (8)
+          </button>
+          <button onclick="filterProjects('ai', this)" class="filter-btn px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-900 text-xs font-semibold text-slate-300 transition">
+            AI Governance & Safety
           </button>
           <button onclick="filterProjects('mobile', this)" class="filter-btn px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-900 text-xs font-semibold text-slate-300 transition">
             Mobile Nativo (iOS & Android)
@@ -480,32 +640,54 @@
           <button onclick="filterProjects('shopify', this)" class="filter-btn px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-900 text-xs font-semibold text-slate-300 transition">
             Shopify OS 2.0 & E-Commerce
           </button>
-          <button onclick="filterProjects('fullstack', this)" class="filter-btn px-3.5 py-1.5 rounded-xl border border-slate-700 bg-slate-900 text-xs font-semibold text-slate-300 transition">
-            Full-Stack, Cloud & IA
-          </button>
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
 
-        <!-- Card 1: Myaow iOS -->
-        <article data-category="mobile fullstack" class="project-card bento-card rounded-2xl p-6 flex flex-col justify-between">
+        <!-- Card 1: Agent Governance Runtime -->
+        <article data-category="ai fullstack" class="project-card bento-card bento-card-emerald rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-400 text-xs font-semibold border border-emerald-500/25">
+                <i class="fas fa-shield-check mr-1"></i> AI Agent Governance
+              </span>
+              <span class="text-xs font-mono text-slate-400">TypeScript & Python</span>
+            </div>
+            <h4 class="text-lg font-extrabold text-white mb-2">Agent Governance & Eval Runtime</h4>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+              Runtime gobernado e independiente del proveedor para agentes LLM que ejecutan acciones reales (<code class="text-emerald-300">send_message, update_record, prepare_decision</code>). Incluye muestreo estadístico Cochran, cotas de error Wilson 95%, Z-test de regresión, aprobaciones HITL/campaña, procedencia de datos y kill switches automáticos.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-5">
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">TypeScript / ESM</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">Python 3</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">Wilson 95% CI</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">Kill Switches</span>
+            </div>
+          </div>
+          <a href="https://github.com/myalexverse/agent-governance-runtime" target="_blank" rel="noopener" class="w-full py-2.5 px-4 rounded-xl bg-emerald-500/15 hover:bg-emerald-600 text-emerald-400 hover:text-white border border-emerald-500/30 text-xs font-bold flex items-center justify-center gap-2 transition">
+            <i class="fab fa-github"></i> Ver Framework & Pruebas en GitHub <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </article>
+
+        <!-- Card 2: Myaow iOS -->
+        <article data-category="mobile ai fullstack" class="project-card bento-card rounded-2xl p-6 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="px-2.5 py-1 rounded-md bg-orange-500/15 text-orange-400 text-xs font-semibold border border-orange-500/25">
-                <i class="fab fa-apple mr-1"></i> iOS Nativo • E2EE
+                <i class="fab fa-apple mr-1"></i> iOS Nativo • E2EE & AI
               </span>
               <span class="text-xs font-mono text-slate-400">Swift 6 / SwiftUI</span>
             </div>
             <h4 class="text-lg font-extrabold text-white mb-2">Myaow iOS</h4>
             <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
-              Cliente nativo iPhone con identidad X25519 sin teléfono, cifrado HPKE RFC 9180 v2, Radio PTT híbrida (WebRTC + P2P cercano con 7 tonos sintetizados), videollamadas con 5 filtros faciales en vivo, 23 fondos H.264 procedurales y espacios de proyectos colaborativos.
+              Cliente nativo iPhone con identidad X25519 sin teléfono, cifrado HPKE RFC 9180 v2, Radio PTT híbrida (WebRTC + P2P cercano con 7 tonos sintetizados), videollamadas con 5 filtros faciales en vivo, 23 fondos H.264 procedurales, proyectos con propuestas votables y moderación IA en dispositivo.
             </p>
             <div class="flex flex-wrap gap-1.5 mb-5">
               <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">Swift 6</span>
               <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">CryptoKit HPKE</span>
               <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">WebRTC & CallKit</span>
-              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">Supabase Edge</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">14,449 Checks</span>
             </div>
           </div>
           <a href="https://github.com/myalexverse/Myaow-iOS" target="_blank" rel="noopener" class="w-full py-2.5 px-4 rounded-xl bg-orange-500/15 hover:bg-orange-500 text-orange-400 hover:text-white border border-orange-500/30 text-xs font-bold flex items-center justify-center gap-2 transition">
@@ -513,8 +695,8 @@
           </a>
         </article>
 
-        <!-- Card 2: Myaow Android -->
-        <article data-category="mobile fullstack" class="project-card bento-card rounded-2xl p-6 flex flex-col justify-between">
+        <!-- Card 3: Myaow Android -->
+        <article data-category="mobile ai fullstack" class="project-card bento-card rounded-2xl p-6 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-400 text-xs font-semibold border border-emerald-500/25">
@@ -524,7 +706,7 @@
             </div>
             <h4 class="text-lg font-extrabold text-white mb-2">Myaow Android</h4>
             <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
-              Arquitectura multi-módulo en Kotlin 2.2 y Jetpack Compose (<code class="text-emerald-300">:app, :protocol, :account, :linking-prototype</code>). Llave X25519 envuelta con AES-256-GCM en Android Keystore, compatibilidad binaria HPKE v2 con iOS y prototipo Ed25519 de vinculación multidispositivo.
+              Arquitectura multi-módulo en Kotlin 2.2 y Jetpack Compose (<code class="text-emerald-300">:app, :protocol, :account, :linking-prototype</code>). Llave X25519 envuelta con AES-256-GCM en Android Keystore, compatibilidad binaria HPKE v2 con iOS, matriz de 110+ escenarios de aceptación y prototipo Ed25519 multidispositivo.
             </p>
             <div class="flex flex-wrap gap-1.5 mb-5">
               <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">Kotlin 2.2</span>
@@ -538,7 +720,32 @@
           </a>
         </article>
 
-        <!-- Card 3: Aylesva -->
+        <!-- Card 4: Aylesvoy Smart City Directory -->
+        <article data-category="ai fullstack shopify mobile" class="project-card bento-card bento-card-blue rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/15 text-cyan-400 text-xs font-semibold border border-cyan-500/25">
+                <i class="fas fa-brain mr-1"></i> Fail-Closed AI Moderation
+              </span>
+              <span class="text-xs font-mono text-slate-400">-90% Cloud Cost</span>
+            </div>
+            <h4 class="text-lg font-extrabold text-white mb-2">Aylesvoy — Smart Directory</h4>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+              Directorio geográfico inteligente con capa social en Firebase, compuerta de moderación automática de imágenes por IA (Google Vision SafeSearch con política <strong class="text-white">fail-closed</strong> si falla el umbral de seguridad), motor de gamificación, app nativa iOS y reducción del 90%+ en costos cloud.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-5">
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">Vision AI SafeSearch</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">Fail-Closed Gate</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">Firebase</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">iOS SwiftUI</span>
+            </div>
+          </div>
+          <a href="https://github.com/myalexverse/aylesvoy-smart-directory" target="_blank" rel="noopener" class="w-full py-2.5 px-4 rounded-xl bg-cyan-500/15 hover:bg-cyan-600 text-cyan-300 hover:text-white border border-cyan-500/30 text-xs font-bold flex items-center justify-center gap-2 transition">
+            <i class="fab fa-github"></i> Ver Caso de Estudio & Código <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </article>
+
+        <!-- Card 5: Aylesva -->
         <article data-category="fullstack shopify" class="project-card bento-card bento-card-blue rounded-2xl p-6 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
@@ -568,32 +775,7 @@
           </div>
         </article>
 
-        <!-- Card 4: Aylesvoy Smart City Directory -->
-        <article data-category="fullstack shopify mobile" class="project-card bento-card bento-card-blue rounded-2xl p-6 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="px-2.5 py-1 rounded-md bg-cyan-500/15 text-cyan-400 text-xs font-semibold border border-cyan-500/25">
-                <i class="fas fa-brain mr-1"></i> AI Discovery & Smart City
-              </span>
-              <span class="text-xs font-mono text-slate-400">-90% Cloud Cost</span>
-            </div>
-            <h4 class="text-lg font-extrabold text-white mb-2">Aylesvoy — Smart Directory</h4>
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
-              Reinventa Shopify como un directorio geográfico inteligente con capa social en Firebase, moderación automática de imágenes por IA (Google Vision SafeSearch fail-closed), motor de gamificación, app nativa iOS y reducción del 90%+ en consumo de Google Maps SDK.
-            </p>
-            <div class="flex flex-wrap gap-1.5 mb-5">
-              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">Vercel Serverless</span>
-              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">Firebase</span>
-              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">Vision AI</span>
-              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-200 text-[11px] font-mono">iOS SwiftUI</span>
-            </div>
-          </div>
-          <a href="https://github.com/myalexverse/aylesvoy-smart-directory" target="_blank" rel="noopener" class="w-full py-2.5 px-4 rounded-xl bg-cyan-500/15 hover:bg-cyan-600 text-cyan-300 hover:text-white border border-cyan-500/30 text-xs font-bold flex items-center justify-center gap-2 transition">
-            <i class="fab fa-github"></i> Ver Caso de Estudio & Código <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
-          </a>
-        </article>
-
-        <!-- Card 5: Pascuali -->
+        <!-- Card 6: Pascuali -->
         <article data-category="mobile fullstack" class="project-card bento-card rounded-2xl p-6 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
@@ -618,8 +800,8 @@
           </a>
         </article>
 
-        <!-- Card 6: Raíz de Plata -->
-        <article data-category="shopify" class="project-card bento-card rounded-2xl p-6 flex flex-col justify-between">
+        <!-- Card 7: Raíz de Plata -->
+        <article data-category="shopify" class="project-card bento-card rounded-2xl p-6 flex flex-col justify-between md:col-span-1">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-400 text-xs font-semibold border border-emerald-500/25">
@@ -647,10 +829,10 @@
           </div>
         </article>
 
-        <!-- Card 7: Mundo Country -->
-        <article data-category="shopify" class="project-card bento-card rounded-2xl p-6 flex flex-col justify-between md:col-span-2 lg:col-span-3">
-          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-            <div class="space-y-2 max-w-3xl">
+        <!-- Card 8: Mundo Country -->
+        <article data-category="shopify" class="project-card bento-card rounded-2xl p-6 flex flex-col justify-between md:col-span-1 lg:col-span-2">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 h-full">
+            <div class="space-y-2">
               <div class="flex items-center gap-3">
                 <span class="px-2.5 py-1 rounded-md bg-amber-500/15 text-amber-400 text-xs font-semibold border border-amber-500/25">
                   <i class="fas fa-store mr-1"></i> E-Commerce & Portal de Marca
@@ -669,7 +851,7 @@
             </div>
             <div class="shrink-0">
               <a href="https://www.mundocountry.mx" target="_blank" rel="noopener" class="px-5 py-3 rounded-xl bg-amber-500/15 hover:bg-amber-500 text-amber-300 hover:text-slate-950 border border-amber-500/30 text-xs font-bold flex items-center justify-center gap-2 transition">
-                Visitar Mundo Country en Vivo <i class="fas fa-external-link-alt text-[10px]"></i>
+                Visitar Mundo Country <i class="fas fa-external-link-alt text-[10px]"></i>
               </a>
             </div>
           </div>
@@ -693,62 +875,62 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         <div class="bento-card rounded-2xl p-6">
-          <div class="text-orange-400 text-xl mb-3"><i class="fas fa-mobile-button"></i></div>
-          <h4 class="text-base font-bold text-white mb-2">Mobile Nativo (iOS & Android)</h4>
+          <div class="text-emerald-400 text-xl mb-3"><i class="fas fa-scale-balanced"></i></div>
+          <h4 class="text-base font-bold text-white mb-2">AI Agent Governance & Eval</h4>
           <p class="text-xs text-slate-400 mb-4 leading-relaxed">
-            Interfaces declarativas a 60/120fps, concurrencia estructurada, integración con hardware del sistema y almacenamiento atómico.
+            Evaluación pre-lanzamiento, detección estadística de regresiones, flujos de aprobación, trazabilidad de modelos y kill switches en runtime.
           </p>
           <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
-            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Swift 6 / SwiftUI</span>
-            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Kotlin 2.2 / Compose</span>
-            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">AVFoundation</span>
-            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">CallKit / PushKit</span>
-            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">MapKit / Vision</span>
+            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Agent Orchestration</span>
+            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">LLM Evaluation Gates</span>
+            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Wilson Bounds / Stats</span>
+            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Approval Workflows</span>
+            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Provider Abstraction</span>
           </div>
         </div>
 
         <div class="bento-card rounded-2xl p-6">
-          <div class="text-emerald-400 text-xl mb-3"><i class="fas fa-user-shield"></i></div>
-          <h4 class="text-base font-bold text-white mb-2">Criptografía & Tiempo Real</h4>
+          <div class="text-orange-400 text-xl mb-3"><i class="fas fa-mobile-button"></i></div>
+          <h4 class="text-base font-bold text-white mb-2">Mobile Nativo & Criptografía</h4>
           <p class="text-xs text-slate-400 mb-4 leading-relaxed">
-            Diseño de protocolos E2EE sin confianza en el servidor, acuerdos de llaves autenticados y transporte de voz/video P2P.
+            Interfaces declarativas a 60/120fps, protocolos E2EE interoperables, hardware Keystore/Keychain y voz/video WebRTC P2P.
           </p>
           <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Swift 6 / SwiftUI</span>
+            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Kotlin 2.2 / Compose</span>
             <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">HPKE RFC 9180 v2</span>
-            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">X25519 / Ed25519</span>
-            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">ChaCha20-Poly1305</span>
-            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Keychain & Keystore</span>
-            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">WebRTC / TURN</span>
+            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">X25519 / ChaChaPoly</span>
+            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">WebRTC / CallKit</span>
           </div>
         </div>
 
         <div class="bento-card rounded-2xl p-6">
           <div class="text-blue-400 text-xl mb-3"><i class="fas fa-server"></i></div>
-          <h4 class="text-base font-bold text-white mb-2">Backend, Cloud & SQL</h4>
+          <h4 class="text-base font-bold text-white mb-2">Backend, Python/TS & SQL</h4>
           <p class="text-xs text-slate-400 mb-4 leading-relaxed">
-            Pasarelas serverless endurecidas, funciones SQL con aislamiento de privilegios, colas idempotentes y pruebas deterministas.
+            Servicios mantenibles en Python y TypeScript, funciones SQL con aislamiento de privilegios, colas idempotentes y pruebas deterministas.
           </p>
           <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Python 3 / TypeScript</span>
             <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Supabase Edge (Deno)</span>
             <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">PostgreSQL RLS</span>
             <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Node.js / Express</span>
-            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Firebase / Firestore</span>
-            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">PGlite Testing</span>
+            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">PGlite / Automated CI</span>
           </div>
         </div>
 
         <div class="bento-card rounded-2xl p-6">
           <div class="text-amber-400 text-xl mb-3"><i class="fas fa-bag-shopping"></i></div>
-          <h4 class="text-base font-bold text-white mb-2">Shopify Plus & Web Frontend</h4>
+          <h4 class="text-base font-bold text-white mb-2">Shopify Plus & Web Platforms</h4>
           <p class="text-xs text-slate-400 mb-4 leading-relaxed">
             Arquitectura Theme 2.0 modular, metafields personalizados, optimización de Core Web Vitals e integraciones GraphQL/REST.
           </p>
           <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
             <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Shopify Liquid 2.0</span>
-            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">JavaScript / TS</span>
             <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">React / Next.js</span>
             <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Tailwind CSS</span>
             <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">Storefront GraphQL</span>
+            <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-200">ADRs & Design Notes</span>
           </div>
         </div>
       </div>
@@ -757,10 +939,11 @@
     <!-- FOOTER CTA -->
     <footer class="mt-10 border-t border-slate-800/80 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
       <div class="flex items-center gap-3">
-        <span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span>
-        <span>© 2026 <strong>Abel Alejandro Tovar</strong> • Software Engineer • Guanajuato, México (100% Remote)</span>
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+        <span>© 2026 <strong>Abel Alejandro Tovar</strong> • Senior AI & Software Systems Engineer • 100% Remote</span>
       </div>
-      <div class="flex items-center gap-5">
+      <div class="flex flex-wrap items-center gap-5">
+        <a href="https://github.com/myalexverse/agent-governance-runtime" target="_blank" rel="noopener" class="hover:text-emerald-400 transition">Agent Governance Repo</a>
         <a href="https://github.com/myalexverse/Myaow-iOS" target="_blank" rel="noopener" class="hover:text-orange-400 transition">Myaow iOS</a>
         <a href="https://github.com/myalexverse/Myaow-Android" target="_blank" rel="noopener" class="hover:text-emerald-400 transition">Myaow Android</a>
         <a href="https://github.com/myalexverse" target="_blank" rel="noopener" class="hover:text-white transition">GitHub</a>
@@ -771,7 +954,7 @@
 
   </div>
 
-  <!-- Interactive Portfolio Controller -->
+  <!-- Interactive Portfolio & Statistical Governance Simulator Controller -->
   <script>
     const screens = [
       {
@@ -793,11 +976,11 @@
         caption: "Myaow iOS • Catálogo interactivo «31 formas de ser tú»"
       },
       {
-        badge: "iOS • Colaboración Cifrada",
+        badge: "iOS • Gobernanza Colaborativa",
         module: "Features/Groups + ProjectWorkspace",
-        title: "Grupos Colaborativos: Proyectos, Propuestas Votables, Salud y Misiones",
-        desc: "Convierte conversaciones en decisiones ejecutadas: tablero de equipo con objetivo compartido, periodo de inicio/cierre con calendario plegable y zona horaria, salud calculada automáticamente, propuestas compartidas («Por decidir» y «En el plan») con votos retirables y misiones con evidencias multimedia.",
-        tags: ["ProjectWorkspace", "Votación Sin Duplicados", "Tareas Clave & Ritmo", "Evidencias Cifradas"],
+        title: "Grupos Colaborativos: Proyectos Gobernados, Propuestas Votables y Misiones",
+        desc: "Convierte conversaciones en decisiones auditables: tablero de equipo con objetivo compartido, periodo de inicio/cierre con calendario plegable y zona horaria, salud calculada automáticamente, propuestas compartidas («Por decidir» y «En el plan») con votos retirables y aprobación de administrador hacia tarea con evidencias.",
+        tags: ["ProjectWorkspace", "Approval Workflow", "Tareas Clave & Ritmo", "Evidencias Cifradas"],
         img: "assets/myaow/ios-grupos.png",
         caption: "Myaow iOS • Tablero de avance por integrante y misiones de grupo en Studio Norte"
       },
@@ -806,7 +989,7 @@
         module: "DesignSystem/Media + Decorar Chat",
         title: "Ambiente Vivo: 23 Fondos Cinematográficos Procedurales sin Reinicio",
         desc: "Catálogo de 23 fondos en bucle H.264 (540×960, 24fps, <2 MB, sin audio) aplicables localmente o compartidos en el chat mediante eventos cifrados. El reproductor dual conserva el fotograma exacto durante las transiciones de NavigationStack y se pausa en llamadas, ahorro de energía o segundo plano.",
-        tags: ["23 Videos H.264", "Transición Push/Pop Fluida", "Decoración Local o Compartida", "Presupuesto Térmico"],
+        tags: ["23 Videos H.264", "Transición Push/Pop Fluida", "161 Media Checks PASS", "Presupuesto Térmico"],
         img: "assets/myaow/ios-decorar.png",
         caption: "Myaow iOS • Selector «Decorar chat» con previsualización en vivo (Lava ámbar, violeta, turquesa, Órbita...)"
       },
@@ -824,7 +1007,7 @@
         module: "Features/Radio + Core/Radio",
         title: "Radio Myaow (Walkie-Talkie PTT Híbrido) y Sintetizador «Pulso Myaow»",
         desc: "Comunicación Push-to-Talk con consola propia sobre WebRTC + CallKit (con medidor de amplitud RTP real) y Radio Cercana sin Internet (PCM16 mono cifrado P2P). Incluye 7 señales acústicas originales sintetizadas en memoria (apertura 1320/1810 Hz, cierre 1810/1060 Hz, enlace y ocupado).",
-        tags: ["WebRTC + CallKit PTT", "Radio Cercana Offline P2P", "7 Tonos Sintetizados WAV", "AppIntents Action Button"],
+        tags: ["WebRTC + CallKit PTT", "Radio Cercana Offline P2P", "7 Tonos Sintetizados WAV", "14,449 Audio Checks"],
         img: "assets/myaow/ios-radio.png",
         caption: "Myaow iOS • Verificación de transmisión/recepción de audio RTP y gesticulación reactiva"
       },
@@ -832,7 +1015,7 @@
         badge: "Android • Kotlin 2.2 & Jetpack Compose",
         module: ":app + :protocol + :account",
         title: "Myaow Android: Experiencia Nativa Material 3 & Preparación Local",
-        desc: "Primera base nativa en Kotlin 2.2.21 y Jetpack Compose alineada con los tokens de color OLED de MyaowColors. Genera una identidad criptográfica X25519 local con aleatoriedad segura y valida el protocolo HPKE RFC 9180 v2 directamente contra los vectores de Swift/CryptoKit.",
+        desc: "Base nativa en Kotlin 2.2.21 y Jetpack Compose alineada con los tokens de color OLED de MyaowColors. Genera una identidad criptográfica X25519 local con aleatoriedad segura y valida el protocolo HPKE RFC 9180 v2 directamente contra los vectores de Swift/CryptoKit.",
         tags: ["Kotlin 2.2.21", "Jetpack Compose", "Gradle 8.13 SHA-256", "Android SDK 36"],
         img: "assets/myaow/android-welcome.png",
         caption: "Myaow Android • Pantalla de bienvenida y preparación local de identidad en dispositivo"
@@ -883,6 +1066,77 @@
       document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
       if (buttonEl) buttonEl.classList.add('active');
     }
+
+    // Applied Statistics Simulator (Cochran Sample Size + Wilson 95% Upper Bound)
+    function updateGovSim() {
+      const N = parseInt(document.getElementById('inp-pop').value, 10);
+      const n = parseInt(document.getElementById('inp-sample').value, 10);
+      const k = Math.min(n, parseInt(document.getElementById('inp-errors').value, 10));
+      const maxThreshPct = parseFloat(document.getElementById('inp-thresh').value);
+
+      document.getElementById('val-pop').textContent = N.toLocaleString() + ' acciones';
+      document.getElementById('val-sample').textContent = n + ' revisadas';
+      document.getElementById('val-errors').textContent = k + (k === 1 ? ' error' : ' errores');
+      document.getElementById('val-thresh').textContent = maxThreshPct.toFixed(1) + '%';
+
+      // Cochran sample size for p=0.03, e=0.05, Z=1.96
+      const z = 1.95996398454;
+      const pExpected = 0.03;
+      const margin = 0.03;
+      const n0 = (z * z * pExpected * (1 - pExpected)) / (margin * margin);
+      const reqSample = Math.min(N, Math.ceil(n0 / (1 + (n0 - 1) / N)));
+
+      // Wilson 95% confidence upper bound
+      const pHat = k / n;
+      const z2 = z * z;
+      const denom = 1 + z2 / n;
+      const center = (pHat + z2 / (2 * n)) / denom;
+      const half = (z * Math.sqrt((pHat * (1 - pHat)) / n + z2 / (4 * n * n))) / denom;
+      const upperPct = Math.min(100, (center + half) * 100);
+      const pointPct = pHat * 100;
+
+      document.getElementById('out-req-sample').textContent = reqSample;
+      document.getElementById('out-point-err').textContent = pointPct.toFixed(2) + '%';
+      document.getElementById('out-wilson-upper').textContent = upperPct.toFixed(2) + '%';
+
+      const sampleOk = n >= reqSample;
+      const boundOk = upperPct <= maxThreshPct;
+
+      const sampleStatusEl = document.getElementById('out-sample-ok');
+      sampleStatusEl.textContent = sampleOk ? 'Muestra suficiente ✓' : `Faltan ${reqSample - n} muestras`;
+      sampleStatusEl.className = sampleOk ? 'text-[10px] text-emerald-400' : 'text-[10px] text-amber-400';
+
+      const boundStatusEl = document.getElementById('out-bound-ok');
+      boundStatusEl.textContent = boundOk ? 'Dentro de política ✓' : 'Excede umbral máx.';
+      boundStatusEl.className = boundOk ? 'text-[10px] text-emerald-400' : 'text-[10px] text-rose-400';
+
+      const wilsonEl = document.getElementById('out-wilson-upper');
+      wilsonEl.className = boundOk
+        ? 'text-base sm:text-lg font-extrabold text-emerald-400 mt-0.5'
+        : 'text-base sm:text-lg font-extrabold text-rose-400 mt-0.5';
+
+      const badge = document.getElementById('sim-status-badge');
+      const exp = document.getElementById('sim-explanation');
+
+      if (!boundOk) {
+        badge.textContent = 'KILL-SWITCH: SUSPENDED';
+        badge.className = 'px-3 py-1 rounded-full text-xs font-mono font-bold bg-rose-500/20 text-rose-300 border border-rose-500/40 shrink-0';
+        exp.className = 'p-3.5 rounded-xl bg-rose-950/35 border border-rose-500/40 text-xs text-rose-200 font-mono';
+        exp.textContent = `[AUTO-SUSPENDED] La cota superior de error al 95% de confianza (${upperPct.toFixed(2)}%) supera el umbral permitido (${maxThreshPct.toFixed(1)}%). El runtime suspende la capacidad automáticamente.`;
+      } else if (!sampleOk) {
+        badge.textContent = 'HOLD: SAMPLE UNDERSIZED';
+        badge.className = 'px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 shrink-0';
+        exp.className = 'p-3.5 rounded-xl bg-amber-950/35 border border-amber-500/40 text-xs text-amber-200 font-mono';
+        exp.textContent = `[HOLD RELEASE] Aunque la cota de error es ${upperPct.toFixed(2)}%, la muestra revisada (${n}) es menor al mínimo estadístico requerido (${reqSample}) para liberar un lote de ${N.toLocaleString()} acciones.`;
+      } else {
+        badge.textContent = 'GO-LIVE APPROVED ✓';
+        badge.className = 'px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shrink-0';
+        exp.className = 'p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/30 text-xs text-slate-200 font-mono';
+        exp.textContent = `[GATE PASS] Muestra revisada (${n} >= ${reqSample} requeridas) garantiza con 95% de confianza que el error real no supera ${upperPct.toFixed(2)}% (umbral máx: ${maxThreshPct.toFixed(1)}%). Acción autorizada para release.`;
+      }
+    }
+
+    updateGovSim();
   </script>
 </body>
 </html>
